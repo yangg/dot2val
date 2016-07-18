@@ -28,7 +28,7 @@ var dot2val = {
    */
   get: function(obj, key, def) {
     let k = key;
-    if(k.indexOf('.') > -1) {
+    if(obj && k.indexOf('.') > -1) {
       let segments = key.split('.');
       k = segments.pop();
 

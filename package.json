@@ -1,7 +1,7 @@
 {
   "name": "dotsval",
   "version": "1.0.0",
-  "description": "get or set a value within a deeply nested object using `dot' notation",
+  "description": "Set or get a value within a deeply nested object using `dot' notation",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
