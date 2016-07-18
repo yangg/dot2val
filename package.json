@@ -1,0 +1,28 @@
+{
+  "name": "dotsval",
+  "version": "1.0.0",
+  "description": "get or set a value within a deeply nested object using `dot' notation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangg/dotsval.git"
+  },
+  "keywords": [
+    "util",
+    "nested",
+    "object",
+    "dot"
+  ],
+  "author": "Brook Yang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangg/dotsval/issues"
+  },
+  "homepage": "https://github.com/yangg/dotsval#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
