@@ -1,4 +1,9 @@
 'use strict';
+/*!
+ * dot2val
+ * Set or get a value within a deeply nested object using `dot' notation
+ * @author Brook Yang https://github.com/yangg/dot2val
+ */
 
 var dot2val = {
   /**
@@ -46,7 +51,5 @@ var dot2val = {
 
 if(typeof module !== 'undefined') {
   module.exports = dot2val;
-} else {
-  window.dotsval = dot2val;
 }
 
