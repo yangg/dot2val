@@ -1,6 +1,6 @@
 {
   "name": "dot2val",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Set or get a value within a deeply nested object using `dot' notation",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yangg/dotsval.git"
+    "url": "git+https://github.com/yangg/dot2val.git"
   },
   "keywords": [
     "util",
@@ -19,9 +19,9 @@
   "author": "Brook Yang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yangg/dotsval/issues"
+    "url": "https://github.com/yangg/dot2val/issues"
   },
-  "homepage": "https://github.com/yangg/dotsval#readme",
+  "homepage": "https://github.com/yangg/dot2val#readme",
   "devDependencies": {
     "chai": "^3.5.0"
   }
