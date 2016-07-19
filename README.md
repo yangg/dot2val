@@ -6,11 +6,11 @@ Set or get a value within a deeply nested object using `dot' notation
 
 ## Installation
 ```bash
-npm install dot2val
+npm install --save dot2val
 ```
 
 ## Usage
-```
+```js
 var props = require('dot2val');
 ```
 
@@ -55,8 +55,11 @@ props.get({}, 'doesnt.exist', 'default value'); // => "default value"
 
 ```js
 props.set(obj, 'hello.universe', 'properties');
-props.set(obj, 'hello', 'universe');
+props.set(obj, 'hello1', 'universe');
+props.set(obj, 'prop2');        // delete obj['prop2']
 ```
+
+[Try dot2val in your browser](https://tonicdev.com/yangg/dot2val)
 
 ## License
 MIT

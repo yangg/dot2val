@@ -14,9 +14,10 @@
     "util",
     "nested",
     "object",
-    "dot"
+    "dot",
+    "pathval"
   ],
-  "author": "Brook Yang",
+  "author": "Brook Yang <uedsky@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yangg/dot2val/issues"
