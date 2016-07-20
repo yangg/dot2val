@@ -11,7 +11,7 @@ npm install --save dot2val
 
 ## Usage
 ```js
-var props = require('dot2val');
+var dot2val = require('dot2val');
 ```
 
 Given:
@@ -33,30 +33,26 @@ var arr = [ { foo: 'bar' } ];
 
 Expect:
 
-<!-- js
-  var props = require('./');
--->
-
 #### get
 
 ```js
-props.get(obj, 'prop1.str'); // => "Hello"
-props.get(obj, 'prop1.arr.2'); // => "c"
-props.get(obj, 'prop2.arr.0.nested'); // => "Universe"
+dot2val.get(obj, 'prop1.str'); // => "Hello"
+dot2val.get(obj, 'prop1.arr.2'); // => "c"
+dot2val.get(obj, 'prop2.arr.0.nested'); // => "Universe"
 
-props.get(arr, '0.foo'); // => "bar"
+dot2val.get(arr, '0.foo'); // => "bar"
 
-props.get(undefined, 'doesnt.matter'); // => undefined
-props.get({}, 'doesnt.exist'); // => undefined
-props.get({}, 'doesnt.exist', 'default value'); // => "default value"
+dot2val.get(undefined, 'doesnt.matter'); // => undefined
+dot2val.get({}, 'doesnt.exist'); // => undefined
+dot2val.get({}, 'doesnt.exist', 'default value'); // => "default value"
 ```
 
 #### set
 
 ```js
-props.set(obj, 'hello.universe', 'properties');
-props.set(obj, 'hello1', 'universe');
-props.set(obj, 'prop2');        // delete obj['prop2']
+dot2val.set(obj, 'hello.universe', 'properties');
+dot2val.set(obj, 'hello1', 'universe');
+dot2val.set(obj, 'prop2');        // delete obj['prop2']
 ```
 
 [Try dot2val in your browser](https://tonicdev.com/yangg/dot2val)
