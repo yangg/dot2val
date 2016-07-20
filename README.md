@@ -1,6 +1,6 @@
 # dot2val
 
-[![Build Status](https://travis-ci.org/yangg/dot2val.svg?branch=master)](https://travis-ci.org/yangg/dot2val) [![Code Climate](https://codeclimate.com/github/yangg/dot2val/badges/gpa.svg)](https://codeclimate.com/github/yangg/dot2val) [![npm:](https://img.shields.io/npm/v/dot2val.svg?style=flat)](https://www.npmjs.com/packages/dot2val)
+[![Build Status](https://travis-ci.org/yangg/dot2val.svg?branch=master)](https://travis-ci.org/yangg/dot2val) [![Test Coverage](https://codeclimate.com/github/yangg/dot2val/badges/coverage.svg)](https://codeclimate.com/github/yangg/dot2val/coverage) [![Code Climate](https://codeclimate.com/github/yangg/dot2val/badges/gpa.svg)](https://codeclimate.com/github/yangg/dot2val) [![npm:](https://img.shields.io/npm/v/dot2val.svg?style=flat)](https://www.npmjs.com/packages/dot2val)
 
 Set or get a value within a deeply nested object using `dot' notation
 

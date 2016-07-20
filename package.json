@@ -4,7 +4,8 @@
   "description": "Set or get a value within a deeply nested object using `dot' notation",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-travis": "istanbul cover _mocha && codeclimate-test-reporter < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
