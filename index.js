@@ -9,13 +9,15 @@ var dot2val = {
   /**
    *  sets a value within a deeply nested object using "dot" notation
    */
-  set: function(obj, key, val) {
-    let k = key;
-    if(k.indexOf('.') > -1) {
-      let segments = key.split('.');
-      k = segments.pop();
+  set: function(obj, parts, val) {
+    if(!Array.isArray(parts)) {
+      parts = parts.split('.');
+    }
+    let k = parts[0];
+    if(parts.length > 1) {
+      k = parts.pop();
 
-      segments.forEach(function(k) {
+      parts.forEach(function(k) {
         if(! obj.hasOwnProperty(k)) {
           obj[k] = {};
         }
@@ -31,13 +33,15 @@ var dot2val = {
   /**
    * retrieves a value from a deeply nested object using "dot" notation
    */
-  get: function(obj, key, def) {
-    let k = key;
-    if(obj && k.indexOf('.') > -1) {
-      let segments = key.split('.');
-      k = segments.pop();
+  get: function(obj, parts, def) {
+    if(!Array.isArray(parts)) {
+      parts = parts.split('.');
+    }
+    let k = parts[0];
+    if(parts.length > -1) {
+      k = parts.pop();
 
-      segments.forEach(function(k) {
+      parts.forEach(function(k) {
         if(! obj.hasOwnProperty(k)) {
           obj = false;
           return false;
