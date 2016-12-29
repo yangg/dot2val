@@ -15,14 +15,16 @@ var dot2val = {
     }
     let k = parts[0];
     if(parts.length > 1) {
-      k = parts[parts.length - 1];
+      let partsLength = parts.length
+      k = parts[partsLength - 1];
 
-      parts.forEach(function(k) {
-        if(! obj.hasOwnProperty(k)) {
-          obj[k] = {};
+      for(let i = 0; i < partsLength - 1; i++) {
+        let part  = parts[i]
+        if(! obj.hasOwnProperty(part)) {
+          obj[part] = {};
         }
-        obj = obj[k];
-      });
+        obj = obj[part];
+      }
     }
     if(typeof val !== 'undefined') {
       obj[k] = val;
@@ -39,15 +41,17 @@ var dot2val = {
     }
     let k = parts[0];
     if(parts.length > -1) {
-      k = parts[parts.length - 1];
+      let partsLength = parts.length
+      k = parts[partsLength - 1];
 
-      parts.forEach(function(k) {
-        if(! obj.hasOwnProperty(k)) {
+      for(let i = 0; i < partsLength - 1; i++) {
+        let part  = parts[i]
+        if(! obj.hasOwnProperty(part)) {
           obj = false;
-          return false;
+          break
         }
-        obj = obj[k];
-      });
+        obj = obj[part];
+      }
     }
     return obj ? (typeof obj[k] !== 'undefined' ? obj[k] : def) : def;
   }
