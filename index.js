@@ -15,7 +15,7 @@ var dot2val = {
     }
     let k = parts[0];
     if(parts.length > 1) {
-      k = parts.pop();
+      k = parts[parts.length - 1];
 
       parts.forEach(function(k) {
         if(! obj.hasOwnProperty(k)) {
@@ -39,7 +39,7 @@ var dot2val = {
     }
     let k = parts[0];
     if(parts.length > -1) {
-      k = parts.pop();
+      k = parts[parts.length - 1];
 
       parts.forEach(function(k) {
         if(! obj.hasOwnProperty(k)) {
