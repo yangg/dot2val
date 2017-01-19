@@ -13,13 +13,13 @@ var dot2val = {
     if(!Array.isArray(parts)) {
       parts = parts.split('.');
     }
-    let k = parts[0];
+    var k = parts[0];
     if(parts.length > 1) {
-      let partsLength = parts.length
+      var partsLength = parts.length
       k = parts[partsLength - 1];
 
-      for(let i = 0; i < partsLength - 1; i++) {
-        let part  = parts[i]
+      for(var i = 0; i < partsLength - 1; i++) {
+        var part  = parts[i]
         if(! obj.hasOwnProperty(part)) {
           obj[part] = {};
         }
@@ -39,13 +39,13 @@ var dot2val = {
     if(!Array.isArray(parts)) {
       parts = parts.split('.');
     }
-    let k = parts[0];
+    var k = parts[0];
     if(parts.length > -1) {
-      let partsLength = parts.length
+      var partsLength = parts.length
       k = parts[partsLength - 1];
 
-      for(let i = 0; i < partsLength - 1; i++) {
-        let part  = parts[i]
+      for(var i = 0; i < partsLength - 1; i++) {
+        var part  = parts[i]
         if(! obj.hasOwnProperty(part)) {
           obj = false;
           break
