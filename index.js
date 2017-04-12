@@ -40,7 +40,7 @@ var dot2val = {
       parts = parts.split('.');
     }
     var k = parts[0];
-    if(parts.length > -1) {
+    if(parts.length > 1) {
       var partsLength = parts.length
       k = parts[partsLength - 1];
 
